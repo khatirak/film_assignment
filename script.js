@@ -2,19 +2,19 @@
 document.addEventListener('DOMContentLoaded', function() {
     const carouselImages = [
         {
-            src: 'img/img1.jpg',
-            title: 'Image 1',
-            text: 'This is the description for image 1. Add your BTS content here.'
+            src: 'img/BTS1.png',
+            title: 'Shopping for the ingredients',
+            text: 'Us selecting which milk we like best. Usually people like coconut, almond, or oat as they tend to complement the matcha better and make it creamier.'
         },
         {
-            src: 'img/img2.jpg',
-            title: 'Image 2',
-            text: 'This is the description for image 2. Add your BTS content here.'
+            src: 'img/BTS2.png',
+            title: 'Prepping the scene',
+            text: 'Having the ingredients laid out clearly for the viewer to see exactly what\'s going on.'
         },
         {
-            src: 'img/img3.jpg',
-            title: 'Image 3',
-            text: 'This is the description for image 3. Add your BTS content here.'
+            src: 'img/BTS3.png',
+            title: 'Solo shots of ingredients',
+            text: 'We like Jenki matcha because the quality is known to be excellent from London.'
         }
     ];
 
