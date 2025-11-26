@@ -65,5 +65,26 @@ document.addEventListener('DOMContentLoaded', function() {
         // Initialize carousel
         updateCarousel();
     }
+
+    // Video timestamp jumping functionality
+    const videoPlayer = document.getElementById('videoPlayer');
+    const jumpButtons = document.querySelectorAll('.video-jump-btn');
+
+    if (videoPlayer && jumpButtons.length > 0) {
+        jumpButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const time = this.getAttribute('data-time');
+                const currentSrc = videoPlayer.src;
+                
+                // Extract video ID from current src
+                const videoIdMatch = currentSrc.match(/embed\/([^?]+)/);
+                if (videoIdMatch) {
+                    const videoId = videoIdMatch[1];
+                    // Update iframe src with timestamp
+                    videoPlayer.src = `https://www.youtube.com/embed/${videoId}?start=${time}&autoplay=1`;
+                }
+            });
+        });
+    }
 });
 
